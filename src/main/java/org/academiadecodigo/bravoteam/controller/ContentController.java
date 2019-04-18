@@ -1,19 +1,14 @@
 package org.academiadecodigo.bravoteam.controller;
 
-import org.academiadecodigo.bravoteam.model.Content;
-import org.academiadecodigo.bravoteam.model.User;
+import org.academiadecodigo.bravoteam.services.model.Content;
 import org.academiadecodigo.bravoteam.services.ContentService;
 import org.academiadecodigo.bravoteam.services.UserService;
+import org.academiadecodigo.bravoteam.services.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.ModelAndView;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 

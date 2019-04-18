@@ -1,4 +1,4 @@
-package org.academiadecodigo.bravoteam.services.Model;
+package org.academiadecodigo.bravoteam.services.model;
 
 public interface Model {
 

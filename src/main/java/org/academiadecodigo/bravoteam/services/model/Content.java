@@ -1,4 +1,4 @@
-package org.academiadecodigo.bravoteam.model;
+package org.academiadecodigo.bravoteam.services.model;
 
 import org.springframework.web.multipart.MultipartFile;
 

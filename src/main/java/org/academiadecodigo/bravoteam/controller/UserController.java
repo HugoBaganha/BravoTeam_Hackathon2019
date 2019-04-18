@@ -1,7 +1,7 @@
 package org.academiadecodigo.bravoteam.controller;
 
-import org.academiadecodigo.bravoteam.model.User;
 import org.academiadecodigo.bravoteam.services.UserService;
+import org.academiadecodigo.bravoteam.services.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

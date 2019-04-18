@@ -1,7 +1,7 @@
 package org.academiadecodigo.bravoteam.services;
 
-import org.academiadecodigo.bravoteam.model.Content;
-import org.academiadecodigo.bravoteam.model.User;
+import org.academiadecodigo.bravoteam.services.model.Content;
+import org.academiadecodigo.bravoteam.services.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
