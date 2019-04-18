@@ -1,16 +1,23 @@
-package org.academiadecodigo.bravoteam.services.Model;
+package org.academiadecodigo.bravoteam.services.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "customer" )
+@Table(name = "user" )
 public class User extends AbstractModel {
 
     private String userName;
     private String name;
     private String email;
     private int password;
+
+    @OneToMany(
+            mappedBy = "user",
+            cascade = {CascadeType.ALL},
+            orphanRemoval = true,
+            fetch = FetchType.EAGER
+    )
+
 
     public String getUserName() {
         return userName;

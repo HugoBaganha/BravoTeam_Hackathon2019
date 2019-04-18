@@ -1,4 +1,4 @@
-package org.academiadecodigo.bravoteam.services.Command;
+package org.academiadecodigo.bravoteam.services.command;
 
 import javax.validation.constraints.*;
 
