@@ -1,4 +1,4 @@
-package org.academiadecodigo.bravoteam.services.model;
+package org.academiadecodigo.bravoteam.persistence.model;
 
 public interface Model {
 

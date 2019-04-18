@@ -1,9 +1,9 @@
 package org.academiadecodigo.bravoteam.controller;
 
-import org.academiadecodigo.bravoteam.services.model.Content;
+import org.academiadecodigo.bravoteam.persistence.model.Content;
 import org.academiadecodigo.bravoteam.services.ContentService;
 import org.academiadecodigo.bravoteam.services.UserService;
-import org.academiadecodigo.bravoteam.services.model.User;
+import org.academiadecodigo.bravoteam.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

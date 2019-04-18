@@ -1,6 +1,6 @@
 package org.academiadecodigo.bravoteam.services;
 
-import org.academiadecodigo.bravoteam.services.model.User;
+import org.academiadecodigo.bravoteam.persistence.model.User;
 
 import java.util.List;
 
