@@ -1,10 +1,12 @@
 package org.academiadecodigo.bravoteam.services.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "user" )
-public class User extends AbstractModel {
+public class User extends org.academiadecodigo.bravoteam.services.model.AbstractModel {
 
     private String userName;
     private String name;
@@ -17,6 +19,8 @@ public class User extends AbstractModel {
             orphanRemoval = true,
             fetch = FetchType.EAGER
     )
+
+    private List<Content> accounts = new ArrayList<>();
 
 
     public String getUserName() {
