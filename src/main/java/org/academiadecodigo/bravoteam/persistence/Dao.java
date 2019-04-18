@@ -1,5 +1,6 @@
 package org.academiadecodigo.bravoteam.persistence;
 
+import org.academiadecodigo.bravoteam.persistence.model.AbstractModel;
 import org.springframework.ui.Model;
 
 
@@ -7,7 +8,7 @@ import org.springframework.ui.Model;
  * Base interface for data access objects, provides methods to manage models
  * @param <T> the model type
  */
-public interface Dao<T extends Model> {
+public interface Dao<T extends AbstractModel> {
 
     /**
      * Gets the model

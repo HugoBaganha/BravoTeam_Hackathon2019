@@ -1,0 +1,14 @@
+org/academiadecodigo/bravoteam/persistence/model/AbstractModel.class
+org/academiadecodigo/bravoteam/controller/ContentController.class
+org/academiadecodigo/bravoteam/services/UserServiceImpl.class
+org/academiadecodigo/bravoteam/persistence/model/Model.class
+org/academiadecodigo/bravoteam/persistence/UserDao.class
+org/academiadecodigo/bravoteam/persistence/model/User.class
+org/academiadecodigo/bravoteam/uploadhandler/WebInitializer.class
+org/academiadecodigo/bravoteam/services/ContentServiceImpl.class
+org/academiadecodigo/bravoteam/services/UserService.class
+org/academiadecodigo/bravoteam/persistence/Dao.class
+org/academiadecodigo/bravoteam/services/ContentService.class
+org/academiadecodigo/bravoteam/persistence/model/Content.class
+org/academiadecodigo/bravoteam/uploadhandler/SpringWebMvcConfig.class
+org/academiadecodigo/bravoteam/controller/UserController.class

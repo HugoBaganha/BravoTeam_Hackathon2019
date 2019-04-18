@@ -1,16 +1,36 @@
 package org.academiadecodigo.bravoteam.persistence.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "customer" )
-public class User extends AbstractModel {
+@Table(name = "user")
+@Component
+public class User extends AbstractModel{
 
     private String userName;
     private String name;
     private String email;
     private int password;
+
+    @OneToMany(
+            // propagate changes on customer entity to account entities
+            cascade = {CascadeType.ALL},
+
+            // make sure to remove accounts if unlinked from customer
+            orphanRemoval = true,
+
+            // user customer foreign key on account table to establish
+            // the many-to-one relationship instead of a join table
+            mappedBy = "user",
+
+            // fetch accounts from database together with user
+            fetch = FetchType.EAGER
+    )
+    private List<Content> contents = new ArrayList<>();
 
     public String getUserName() {
         return userName;

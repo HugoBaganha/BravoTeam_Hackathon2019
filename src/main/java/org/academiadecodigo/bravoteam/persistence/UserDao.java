@@ -1,27 +1,38 @@
 package org.academiadecodigo.bravoteam.persistence;
 
+import org.academiadecodigo.bravoteam.persistence.model.User;
+import org.springframework.stereotype.Repository;
 import org.springframework.ui.Model;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import java.util.List;
 
-public class UserDao<T extends Model> implements Dao<T> {
+@Repository
+public class UserDao implements Dao<User> {
 
 
-    protected Class<T> modelType;
+    protected User user;
 
     @PersistenceContext
     protected EntityManager em;
 
-    /**
-     * Initializes a new JPA DAO instance given a model type
-     *
-     * @param modelType the model type
-     */
-    public UserDao(Class<T> modelType) {
-        this.modelType = modelType;
+    public UserDao(User user) {
+        this.user = user;
     }
 
+
+    public List<User> findAll() {
+
+        CriteriaQuery<User> criteriaQuery = em.getCriteriaBuilder().createQuery(User.class);
+        Root<User> root = criteriaQuery.from(User.class);
+        return em.createQuery(criteriaQuery).getResultList();
+
+        // Using JPA
+        // return em.createQuery( "from " + user.getSimpleName(), user).getResultList();
+    }
     /**
      * Sets the entity manager
      *
@@ -35,15 +46,13 @@ public class UserDao<T extends Model> implements Dao<T> {
      * @see Dao#findById(Integer)
      */
     @Override
-    public T findById(Integer id) {
-        return em.find(modelType, id);
+    public User findById(Integer id) {
+        return em.find(User.class, id);
     }
 
-    /**
-     * @see Dao#saveOrUpdate(Model)
-     */
+
     @Override
-    public T saveOrUpdate(T modelObject) {
+    public User saveOrUpdate(User modelObject) {
         return em.merge(modelObject);
     }
 
@@ -52,6 +61,6 @@ public class UserDao<T extends Model> implements Dao<T> {
      */
     @Override
     public void delete(Integer id) {
-        em.remove(em.find(modelType, id));
+        em.remove(em.find(User.class, id));
     }
 }

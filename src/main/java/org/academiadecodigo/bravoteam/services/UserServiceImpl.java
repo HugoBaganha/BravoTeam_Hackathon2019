@@ -1,14 +1,16 @@
 package org.academiadecodigo.bravoteam.services;
 
+import org.academiadecodigo.bravoteam.persistence.Dao;
 import org.academiadecodigo.bravoteam.persistence.UserDao;
 import org.academiadecodigo.bravoteam.persistence.model.Content;
 import org.academiadecodigo.bravoteam.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-
+@Service
 public class UserServiceImpl implements UserService {
     private UserDao userDao;
     private Content content;

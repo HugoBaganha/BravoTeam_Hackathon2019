@@ -1,0 +1,14 @@
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/persistence/UserDao.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/persistence/model/User.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/services/ContentService.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/persistence/model/Content.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/persistence/Dao.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/persistence/model/AbstractModel.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/services/UserServiceImpl.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/uploadhandler/WebInitializer.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/services/UserService.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/controller/ContentController.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/persistence/model/Model.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/services/ContentServiceImpl.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/controller/UserController.java
+/Users/codecadet/repos/BravoTeam_Hackathon2019/src/main/java/org/academiadecodigo/bravoteam/uploadhandler/SpringWebMvcConfig.java

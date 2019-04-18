@@ -1,14 +1,33 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Upload File Request Page</title>
+    <title>Add Product Form</title>
 </head>
 <body>
-<form method="POST" action="uploadFile" enctype="multipart/form-data">
-    File to upload: <input type="file" name="file"><br />
-    Name: <input type="text" name="name"><br /> <br />
-    <input type="submit" value="Upload"> Press here to upload the file!
-</form>
+<div id="global">
+    <form:form commandName="content" action="save-content" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Add a product</legend>
+            <p>
+                <label for="name">Product Name: </label>
+                <form:input id="name" path="name" cssErrorClass="error" />
+                <form:errors path="name" cssClass="error" />
+            </p>
+            <p>
+                <label for="description">Description: </label>
+                <form:input id="description" path="description" />
+            </p>
+            <p>
+                <label for="content">Content: </label>
+                <input type="file" name="videos" multiple="multiple"/>
+            </p>
+            <p id="buttons">
+                <input id="reset" type="reset" tabindex="4">
+                <input id="submit" type="submit" tabindex="5" value="Add Product">
+            </p>
+        </fieldset>
+    </form:form>
+</div>
 </body>
 </html>
