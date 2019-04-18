@@ -1,4 +1,4 @@
-package org.academiadecodigo.bravoteam.services.Model;
+package org.academiadecodigo.bravoteam.services.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public class AbstractModel implements Model {
+public abstract class AbstractModel implements Model {
 
 
     @Id
@@ -26,6 +26,8 @@ public class AbstractModel implements Model {
 
     @Override
     public String toString() {
-        return "AbstractModel{}";
+        return "AbstractModel{" +
+                "id=" + id +
+                '}';
     }
 }
