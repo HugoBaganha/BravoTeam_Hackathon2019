@@ -1,4 +1,6 @@
 package org.academiadecodigo.bravoteam.services;
 
-public class ContentServiceImpl {
+import org.academiadecodigo.bravoteam.model.User;
+
+public class ContentServiceImpl implements ContentService {
 }

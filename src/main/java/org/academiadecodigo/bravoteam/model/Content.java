@@ -5,6 +5,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class Content {
 
     private MultipartFile file;
+    private User user;
 
 
     public MultipartFile getFile() {
@@ -14,4 +15,9 @@ public class Content {
     public void setFile(MultipartFile file) {
         this.file = file;
     }
+
+    public User getUser(){
+        return user;
+    }
+
 }
